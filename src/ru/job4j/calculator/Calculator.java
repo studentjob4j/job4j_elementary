@@ -12,5 +12,7 @@ public class Calculator {
         System.out.println(sixdivtwo);
         System.out.println(fiveminustwo);
         System.out.println(sixandfive);
+
     }
+
 }
