@@ -6,6 +6,14 @@ public class ArrayDefinition {
         short[] ages = new short[10];
         String[] surnames = new String[100500];
         float[] prices = new float[40];
+        String[] names = new String[4];
+        names[0] = "Vasya";
+        names[1] = "petr";
+        names[2] = "ola";
+        names[3] = "kola";
+        for (int index = 0; index < names.length; index++) {
+            System.out.println(names[index]);
+        }
     }
 
 }
