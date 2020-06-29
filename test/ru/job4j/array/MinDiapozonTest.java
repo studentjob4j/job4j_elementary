@@ -8,11 +8,13 @@ import static org.junit.Assert.*;
 public class MinDiapozonTest {
 
     @Test
-    public void whenFirstMin() { assertThat(MinDiapozon.findMin(new int[] {-1, 0, 5, 10}, 1, 3), is(0));
+    public void whenFirstMin() {
+        assertThat(MinDiapozon.findMin(new int[] {-1, 0, 5, 10}, 1, 3), is(0));
     }
 
     @Test
-    public void whenLastMin() { assertThat(MinDiapozon.findMin(new int[] {10, 5, 3, 1}, 1, 3), is(1));
+    public void whenLastMin() {
+        assertThat(MinDiapozon.findMin(new int[] {10, 5, 3, 1}, 1, 3), is(1));
     }
 
     @Test
