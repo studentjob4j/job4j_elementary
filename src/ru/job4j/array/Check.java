@@ -8,6 +8,7 @@ public class Check {
             boolean example = data[0];
             if (example != data[index]) {
                result = false;
+               break;
             }
         }
         return result;
