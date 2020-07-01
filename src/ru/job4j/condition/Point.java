@@ -12,7 +12,7 @@ public class Point {
 
     public  double distance(Point that) {
         double result;
-        result = Math.sqrt(Math.pow((this.x - that.x), 2) + Math.pow((this.y - this.y), 2));
+        result = Math.sqrt(Math.pow((this.x - that.x), 2) + Math.pow((this.y - that.y), 2));
         return result;
     }
 
