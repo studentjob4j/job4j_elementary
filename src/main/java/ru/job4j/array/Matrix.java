@@ -14,18 +14,22 @@ public class Matrix {
         return result;
     }
 
+    private static byte[] convert(int[][] array) {
+        String result = "";
+        for (int[] row : array) {
+            for (int cell : row) {
+                String temp = Integer.toString(cell);
+                result += temp + System.lineSeparator();
+            }
+        }
+        return result.getBytes();
+    }
+
     public static void main(String[] args) {
+
         try {
            FileOutputStream out = new FileOutputStream("result.txt");
-            int[][] temp = multiple(2);
-            byte[] result = new byte[4];
-            int count = 0;
-            for (int[] row : temp) {
-                for (int cell : row) {
-                    result[count++] = (byte) cell;
-                }
-            }
-            out.write(result);
+           out.write(convert(multiple(2)));
         } catch (Exception e) {
             e.printStackTrace();
         }
