@@ -27,8 +27,7 @@ public class Matrix {
 
     public static void main(String[] args) {
 
-        try {
-           FileOutputStream out = new FileOutputStream("result.txt");
+        try (FileOutputStream out = new FileOutputStream("result.txt")) {
            out.write(convert(multiple(2)));
         } catch (Exception e) {
             e.printStackTrace();
